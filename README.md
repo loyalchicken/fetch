@@ -43,5 +43,4 @@ curl -X POST http://localhost:80/receipts/process -H "Content-Type: application/
     "items": [
         {"shortDescription": "Pepsi - 12-oz", "price": "1.25"}
     ]
-}'
-# fetch
+}'# fetch
