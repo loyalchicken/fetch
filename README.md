@@ -29,18 +29,3 @@ The service exposes two endpoints:
 - **Get Points**: `GET /receipts/{receipt_id}/points`
   
   Retrieve the calculated points for the given receipt ID by making a request to `http://localhost:80/receipts/{receipt_id}/points`.
-
-## API Example
-
-**Process a Receipt:**
-
-```sh
-curl -X POST http://localhost:80/receipts/process -H "Content-Type: application/json" -d '{
-    "retailer": "Target",
-    "purchaseDate": "2022-01-02",
-    "purchaseTime": "13:13",
-    "total": "1.25",
-    "items": [
-        {"shortDescription": "Pepsi - 12-oz", "price": "1.25"}
-    ]
-}'# fetch
